@@ -49,7 +49,7 @@ resource "aws_docdb_cluster" "main" {
   tags                            = merge(local.tags, { Name = "${local.name_prefix}-cluster" })
   engine_version                  = var.engine_version
   storage_encrypted               = true
-  kms_key_id                      = var.kms_key_id
+#  kms_key_id                      = var.kms_key_id
 }
 
 
